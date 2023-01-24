@@ -1,0 +1,49 @@
+/* main {
+    height: 380px;
+    display: grid;
+    grid-template-columns: 50%  50%;
+  } */
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  header {
+    background-color: #F1F1F1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .weather-search {
+    width: 600px;
+    padding: 20px;
+    margin-left: 45px;
+  }
+  
+  .stockholm-weather {
+    width: 550px;
+    padding: 20px;
+
+    margin-left: 45px;
+  }
+  
+  footer {
+    background-color: #F1F1F1;
+    padding: 20px;
+    text-align: center;
+  }
+
+  #localHeader{margin-left: 750px;}
+
+  #searchWeather{margin-right: 300px;}
+
+  #searchInput{width: 250px;}
+
+  
