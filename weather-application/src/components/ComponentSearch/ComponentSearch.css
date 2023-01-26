@@ -1,3 +1,37 @@
-.search-weather{margin-left: 400px;height: 500px;width: 500px;margin-top: 200px;}
+.search-weather{height: 500px;width: 400px;margin-top: 200px;}
 
-#section1{margin-left: 100px;width: 400px;height: 700px;background-color: lightblue;border-radius: 5%;}
+#section1{margin-left: 50px;height: 370px;background-color: lightblue;border-radius: 5%;width: 750px;}
+#search-div {
+  
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    width: 91%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+
+#search-div h3 {
+ 
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#search-div p {
+  
+    color: #666;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#search-div img {
+   
+    height: 50px;
+    width: auto;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+#h3forecast{text-align: center;}

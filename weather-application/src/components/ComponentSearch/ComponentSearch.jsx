@@ -26,8 +26,9 @@ function ComponentSearch() {
   };
 
   return (
+    <>
     <div className='weather-search'>
-         <h1 id='searchWeather'>Search weather by City</h1>
+         <h1 id='searchWeather'>Search Weather By City</h1>
       <form onSubmit={handleSearch}>
         <input
         id='searchInput'
@@ -35,24 +36,27 @@ function ComponentSearch() {
           placeholder="Enter location"
           value={location}
           onChange={event => setLocation(event.target.value)}
+          
         />
-        {/* <button type="submit">Search</button> */}
+     
       </form>
+      </div>
       {weather.location && (
-        <div>
-            <br></br>
-          <h3>Weather in {weather.location.name}</h3>
+        <div id='search-div'>
+            
+          <h3>Current weather in {weather.location.name}  <img src={weather.current.condition.icon} alt='Weather logo'/></h3>
+          
           <p>
             Date: {new Date(weather.current.last_updated_epoch * 1000).toDateString()}
           </p>
           <p>Time: {new Date(weather.current.last_updated_epoch * 1000).toLocaleTimeString()}</p>
           <p>Temperature: {weather.current.temp_c} &#8451;</p>
-
+          <h3 id='h3forecast'>Upcoming Days In {weather.location.name}</h3>
           <WeatherForecast location={location} setLocation={setLocation} />
 
         </div>
       )}
-    </div>
+    </>
   );
 
 }

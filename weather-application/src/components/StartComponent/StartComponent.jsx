@@ -18,19 +18,23 @@ function StartComponent() {
   }, []);
 
   return (
+    
     <div className='stockholm-weather'>
       {weather.location && (
         <div>
-          <h1>Weather in {weather.location.name}</h1>
+          <h1>Today's Weather in {weather.location.name}  </h1>
+          <img className="weather-logo" src={weather.current.condition.icon} alt="Weather logo" />
           {/* , {weather.location.region} */}
           <p>
-            Date: {new Date(weather.current.last_updated_epoch * 1000).toDateString()}
+            {new Date(weather.current.last_updated_epoch * 1000).toDateString()}
           </p>
-          <p>Time: {new Date(weather.current.last_updated_epoch * 1000).toLocaleTimeString()}</p>
-          <p>Temperature: {weather.current.temp_c} &#8451;</p>
+          <p>{new Date(weather.current.last_updated_epoch * 1000).toLocaleTimeString()}</p>
+          <p> {weather.current.temp_c} &#8451;</p>
         </div>
       )}
+      
     </div>
+
   );
 }
 

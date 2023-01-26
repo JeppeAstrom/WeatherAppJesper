@@ -1,8 +1,4 @@
-/* main {
-    height: 380px;
-    display: grid;
-    grid-template-columns: 50%  50%;
-  } */
+
 
   .container {
     width: 80%;
@@ -19,18 +15,22 @@
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    grid-template-columns: 80% 20%;
+    height: 370px;
   }
   
   .weather-search {
-    width: 600px;
+    width: 750px;
     padding: 20px;
-    margin-left: 45px;
+    margin-left: 30%;
+    margin-right: 25%;
+    text-align: left;
   }
   
   .stockholm-weather {
-    width: 550px;
+    width: 200px;
     padding: 20px;
-
+    
     margin-left: 45px;
   }
   
@@ -44,6 +44,13 @@
 
   #searchWeather{margin-right: 300px;}
 
-  #searchInput{width: 250px;}
+  #searchInput{width: 338px;}
+
+  #search-div{text-align: left;margin-left: 50px;}
+
+  header{background-image:url("../images/stockholm.jpg");
+    background-size: cover;
+    background-position: center;
+  }
 
   
